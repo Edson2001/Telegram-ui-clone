@@ -1,38 +1,260 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Tahoma';
+}
+ul{
+  list-style: none;
+}
+.bg{
+  width: 100%;
+  background-color: #e7ebf0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+
+  background-color: #fff;
+  max-width: 1150px;
+  width: 1150px;
+  margin: 0 auto;
+  height: 800px;  
+
+
+}
+.header{
+  background-color: #5682a3;
+  max-width: 100%;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  padding-left:  10px;
+  padding-right:  10px;
+  align-items: center;
+  color: #fff;
+}
+.header .info{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 250px;
+}
+.header .info h6{
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  
+}
+.header .options{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .options img{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.header .middle{
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 22px;
+  margin-right: 600px;
+}
+.containerInterno{
+  max-width: 100%;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar{
+
+  height: 800px;
+  width: 300px;
+  border-right: 2px solid #e9ebed;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+.main{
+  max-width: 850px;
+  height: 800px;
+  width: 850px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.search{
+  padding: 15px;
+  width: 100%;
+}
+.search input{
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  width: 250px;
+  outline: none;
+}
+
+.ul-menu-item{
+  padding: 10px;
+  display: flex;
+  
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #e7ebf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo img{
+  max-width: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.itens span{
+  font-size: 13px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.itens{
+  margin-left: 12px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.itens h6{
+  color: #000;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 8px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.marked{
+  background-color: #6490b1;
+  color: #fff;
+}
+.marked h6{
+  color: #fff;
+}
+.main .messages{
+  height: 600px;
+  max-width: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+}
+.main .send{
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.send img, .messages img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.send .mainSend{
+  width: 76%;
+
+}
+.send .user-logo, .send .sendButtom{
+  width: 10%;
+}
+.send .user-logo, .send .sendButtom i{
+  font-size: 32px;
+}
+.send .sendButtom{
+  background-color: #30a3e6;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.send input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  width: 100%;
+  opacity: 0.6;
+  outline: none;
+}
+.ico-size{
+  position: absolute;
+  right: 24%;
+  font-size: 19px;
+}
+/*message*/
+.messages .itemMessage{
+  margin-top: 22px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messages .itemMessage .user-info, .user{
+  display: flex;
+  justify-content: space-between;
+
+}
+.messages .itemMessage .dataMessage{
+  opacity: 0.6;
+  font-size: 12px;
+}
+.messages .itemMessage .user-info .user {
+
+  align-items: initial;
+}
+
+.messages .itemMessage .user-info .user h5{
+  margin-top: 8px;
+  font-size: 14px;
+  margin-left: 12px;
+  color: #6490b1;
+}
+h5.user-name{
+  font-size: 12px !important;
+  line-height: 18px !important;
+  font-weight: 700 !important;
+}
+.messages .itemMessage .messageUser{
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 400;
+  margin-left: 12px;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
