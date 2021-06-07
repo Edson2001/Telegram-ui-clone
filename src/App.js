@@ -5,6 +5,8 @@ import Menu from './components/Menu'
 import Messages from './components/Messages'
 import uu2 from './avatar/39365797.jfif'
 import uu17 from './avatar/u-8.jpg'
+import {Provider} from 'react-redux'
+import Store from './store'
 
 import './icofont/icofont.css'
 
@@ -19,7 +21,9 @@ function App() {
 
         <div className="containerInterno">
 
-          <Sidebar />
+          <Provider store={Store}>
+            <Sidebar />
+          </Provider>
 
           <main className="main">
 
